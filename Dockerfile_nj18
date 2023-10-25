@@ -1,7 +1,7 @@
 FROM registry.fedoraproject.org/fedora-minimal:39
 
 RUN microdnf -y --nodocs --setopt=install_weak_deps=0 install \
-      nodejs \
-      nodejs-npm \
-      nodejs-libs
+      nodejs18 \
+      nodejs18-npm \
+      nodejs18-libs
 RUN microdnf clean all
